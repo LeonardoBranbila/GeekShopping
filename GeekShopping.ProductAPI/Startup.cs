@@ -18,6 +18,7 @@ namespace GeekShopping.ProductAPI
         {
             services.AddControllers();
 
+
             var connection = Configuration["MySQLConnection:MySQLConnectionString"];
 
             services.AddDbContext<MySQLContext>(Options => Options.UseMySql
